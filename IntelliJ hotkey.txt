@@ -1,0 +1,20 @@
+F2 : 오류가 난 곳으로 이동
+CTRL + P : 파라메타 (파라메타 정보)
+CTRL + ALT + V : 결과 담는 변수 생성
+ALT + Enter : static import 가능 리스트 보여줌(두번째) // (implements) 가능한 메소드 전부 자동생성 // Ramda 변경
+SHIFT + F6 : CTRL + V 시 특정 이름 Rename 
+CTRL + SHIFT + Backspace : 뒤로 가기
+CTRL + B : 정의로 가기
+CTRL + D : 현재 라인 복사해서 다음 라인으로 붙여넣기
+CTRL + E : 가장 최근에 본 파일 목록
+CTRL + N : 클래스 찾기
+CTRL + R : 마지막 실행했던 것 재실행
+CTRL + ALT + SHIFT + T(블록 지정후) : (Refor 와 관련된 함수 나옴) 함수 작성 후 매소드로 분리하기
+CTRL + ALT + N : 인라인(리턴하는 결과 값 문장을 한 줄로 합쳐줌)
+CTRL + ALT + M : 
+CTRL + SHIFT + T(메소드에서) : Test Case 자동 완성
+CTRL + SHIFT + Backspace : 뒤로 가기
+SHIFT + F10 : 이전 실행된 것 그대로 실행
+
+soutv : System.out.println("result " + result) 문장 출력
+psvm : main method 정의
