@@ -14,7 +14,7 @@ CTRL + ALT + N : 인라인(리턴하는 결과 값 문장을 한 줄로 합쳐�
 CTRL + ALT + M : 
 CTRL + SHIFT + T(메소드에서) : Test Case 자동 완성
 CTRL + SHIFT + Backspace : 뒤로 가기
-CTRL + SHIFT + F10 : 실행하기
+CTRL + SHIFT + F10 : 실행하기(메소드 안에서 실행 시 해당 메소드 실행)
 SHIFT + F10 : 이전 실행된 것 그대로 실행
 
 soutv : System.out.println("result " + result) 문장 출력
