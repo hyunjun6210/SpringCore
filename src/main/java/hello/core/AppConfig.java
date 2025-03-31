@@ -12,7 +12,7 @@ import hello.core.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration // 설정정보
+@Configuration // 설정정보, Configuration 으로 등록 시 스프링 컨테이너에 등록하여 singleton 보장
 public class AppConfig {
 
     @Bean // 스프링 컨테이너 등록

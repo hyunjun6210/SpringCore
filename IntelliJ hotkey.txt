@@ -16,6 +16,7 @@ CTRL + SHIFT + T(메소드에서) : Test Case 자동 완성
 CTRL + SHIFT + Backspace : 뒤로 가기
 CTRL + SHIFT + F10 : 실행하기(메소드 안에서 실행 시 해당 메소드 실행)
 SHIFT + F10 : 이전 실행된 것 그대로 실행
+SHIFT + SHIFT : (파일에서) 하위 파일 검색
 
 soutv : System.out.println("result " + result) 문장 출력
 psvm : main method 정의
