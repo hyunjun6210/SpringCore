@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.Assert;
 
-public class OrderSerivceTest {
+public class OrderServiceTest {
 
     MemberService memberService;
     OrderService orderService;

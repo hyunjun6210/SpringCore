@@ -22,22 +22,21 @@ public class AppConfig {
     }
 
     @Bean
+    public OrderService orderService() {
+        System.out.println("Call AppConfig.orderService");
+        return new OrderServiceImpl(memberRepository(), discountPolicy());
+    }
+
+    @Bean
     public MemberRepository memberRepository() {
         System.out.println("Call AppConfig.memberRepository");
         return new MemoryMemberRepository();
     }
 
     @Bean
-    public OrderService orderService() {
-        System.out.println("Call AppConfig.orderService");
-        //return new OrderServiceImpl(memberRepository(), discountPolicy());
-        return null;
-    }
-
-    @Bean
     public DiscountPolicy discountPolicy() {
-        return new RateDiscountPolicy();
 //        return new FixDiscountPolicy();
+        return new RateDiscountPolicy();
     }
 
 }
