@@ -4,7 +4,7 @@ CTRL + ALT + V : 결과 담는 변수 생성
 ALT + Enter : static import 가능 리스트 보여줌(두번째) // (implements) 가능한 메소드 전부 자동생성 // Ramda 변경
 SHIFT + F6 : CTRL + V 시 특정 이름 Rename 
 CTRL + SHIFT + Backspace : 뒤로 가기
-CTRL + B : 정의로 가기
+CTRL + B : 정의로 가기, (특정 함수에서)모든 곳에서 검색
 CTRL + D : 현재 라인 복사해서 다음 라인으로 붙여넣기
 CTRL + E : 가장 최근에 본 파일 목록
 CTRL + N : 클래스 찾기
