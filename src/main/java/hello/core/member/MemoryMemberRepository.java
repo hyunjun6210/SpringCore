@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.HashMap;
 import java.util.Map;
 
+@Primary
 @Component //Component scan 하려면 붙여야함, 컴포넌트 등록 시 앞에 소문자 변경 : memoryMemberRepository
 public class MemoryMemberRepository implements MemberRepository{
 

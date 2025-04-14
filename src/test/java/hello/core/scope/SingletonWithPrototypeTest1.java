@@ -28,6 +28,7 @@ public class SingletonWithPrototypeTest1 {
     @Test
     void singletonClientUsePrototype() {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(ClientBean.class, PrototypeBean.class);
+
         ClientBean clientBean1 = ac.getBean(ClientBean.class);
         int count1 = clientBean1.logic();
         assertThat(count1).isEqualTo(1);
@@ -65,7 +66,7 @@ public class SingletonWithPrototypeTest1 {
 
         @PostConstruct
         public void init() {
-            System.out.println("PrototypeBean.init" + this);
+            System.out.println("PrototypeBean.init " + this);
         }
 
         @PreDestroy

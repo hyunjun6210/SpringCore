@@ -13,16 +13,16 @@ public class PrototypeTest {
     @Test
     void prototypeBeanFind() {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(PrototypeBean.class);
-        System.out.println("find prototypebean1");
+        System.out.println("find prototypeBean1");
         PrototypeBean prototypeBean1 = ac.getBean(PrototypeBean.class);
-        System.out.println("find prototypebean2");
+        System.out.println("find prototypeBean2");
         PrototypeBean prototypeBean2 = ac.getBean(PrototypeBean.class);
         System.out.println("prototypeBean1 = " + prototypeBean1);
         System.out.println("prototypeBean2 = " + prototypeBean2);
         assertThat(prototypeBean1).isNotSameAs(prototypeBean2);
 
-        prototypeBean1.destory();
-        prototypeBean2.destory();
+        prototypeBean1.destroy(); //prototype은 PostConstruct/PreDestroy가 먹지 않음으로 필요시 이렇게 직접 사용
+        prototypeBean2.destroy();
         ac.close();
     }
 
@@ -34,8 +34,8 @@ public class PrototypeTest {
         }
 
         @PreDestroy
-        public void destory() {
-            System.out.println("PrototypeBean.destory");
+        public void destroy() {
+            System.out.println("PrototypeBean.destroy");
         }
     }
 
